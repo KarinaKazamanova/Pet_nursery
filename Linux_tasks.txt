@@ -1,0 +1,115 @@
+Задача 1
+   57  docker run --name some-mysql -e MYSQL_ROOT_RASSWORD=test123 -d mysql:8.0.31
+   58  sudo su
+ 
+   60  cat > Домашние_животные.txt #Создание нового файла "Домашние животные" и одновременное заполнение его содержимым
+ 
+   62  cat > Вьючные_животные.txt  #Аналогично с файлом "Вьючные животные"
+   63  cat  Вьючные_животные.txt #Проверка содержания файла "Вьючные животные"
+
+
+
+   68  cat Домашние_животные.txt Вьючные_животные.txt > Друзья_человека.txt #Объединение содружимого файлов "Домашние животные" и "Вьючные животные" с одновременной записью их во вновь созданный файл "Друзья человека"
+   69  cat Друзья_человека.txt #Проверка содержимого файла "Друзья человека"
+   70  history > Итоговая_аттестация.txt
+   71  cat Итоговая_аттестация.txt
+
+Задача 2
+   72  mkdir animals
+   73  ll -ls
+   74  Друзья_человека.txt > animals/
+   75  mv Друзья_человека.txt animals/
+   76  ll -ls
+   77  cd animals
+   78  ll -ls
+   79  cat Друзья_человека.txt
+
+Задача 3
+   82  sudo apt-get install mysql-server
+   83  ps -ls
+   84  sudo docker images
+   85  ps
+   86  ps -al
+   87  docker stop mysql
+   88  sudo docker stop mysql
+
+   90  sudo docker stop some-mysql
+   91  sudo apt-get install mysql-server
+   92  ll -ls
+
+   94  cd /etc/mysql/my.cnf
+   95  cd /etc/mysql/
+   96  ll -ls
+   97  cat my.cnf
+   98  mysql --help
+   99  mysql SHOW VARIABLES LIKE 'char%';
+  100  mysql -e SHOW VARIABLES LIKE 'char%';
+  101  mysql -e=SHOW VARIABLES LIKE 'char%';
+  102  mysql --execute=SHOW VARIABLES LIKE 'char%';
+  103  mysql --execute=SHOW VARIABLES LIKE 'char%'
+  104  mysql
+  105  sudo mysql
+  106  dpkg -i man-db_2.9.4-2_amd64.deb
+  107  sudo dpkg -i man-db_2.9.4-2_amd64.deb
+  108  pid
+  109  ps -al
+  110  ip a
+  111  docker stop
+  112  docker stop --help
+ 
+
+Задача 4
+  133  sudo su
+  134  apt download apache2
+  135  sudo dpkg -i apache2_2.4.53-1~deb11u1_amd64.deb
+  136  sudo apt purge apache2
+  137  apt download apache2
+  138  apt download apache2_2.4.53-1~deb11u1_amd64.deb
+  139  cd..
+  140  cd ../
+  141  apt download apache2
+  142  sudo dpkg -i apache2_2.4.53-1~deb11u1_amd64.deb
+  143  ls -al
+  144  sudo dpkg -i apache2_2.4.52-1ubuntu4.5_amd64.deb
+  145  sudo apt -f install
+  146  sudo dpkg -r apache2
+  147  history > Итоговая_аттестация.txt
+
+Ранееб, во время прохождения курсов по Линуксу, загружали Докер через dpkg
+
+   10  sudo get-apt install ca-certificates curl gnupg lsb-release
+   11  sudo apt-get install ca-certificates curl gnupg lsb-release
+   12  sudo mkdir -p /etc/apt/keyrings
+   13  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dea>
+   14  echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyring/>
+   15  sudo apt-get update
+   16  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compos>
+   17  sudo docker run hello-world
+   18  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compos>
+   19  sudo apt remove docker-desktop
+   20  rm -r $HOME/.docker/desktop
+   21  sudo rm /usr/local/bin/com.docker.cli
+   22  sudo apt purge docker-desktop
+   23  ^[[200~cho "deb [arch=$(dpkg --print-architecture)
+   24  signed-by=/etc/apt/keyrings/docker.gpg]
+   25  https://download.docker.com/linux/ubuntu \
+   26  $(lsb_release -cs) stable" | sudo tee
+   27  echo "deb [arch=$(dpkg --print-architecture)
+   28  signed-by=/etc/apt/keyrings/docker.gpg]
+   29  https://download.docker.com/linux/ubuntu \
+   30  $(lsb_release -cs) stable" | sudo tee
+   31  echo "deb [arch=$(dpkg --print-architecture)
+   32  signed-by=/etc/apt/keyrings/docker.gpg]
+   33  https://download.docker.com/linux/ubuntu \
+   34  $(lsb_release -cs) stable" | sudo tee/etc/apt/sources.list.d/docker.list>
+   35  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   36  docker-compose-plugin
+   37  sudo apt-get remove docker docker-engine docker.io containerd runc
+   38  sudo install -m 0755 -d /etc/apt/keyrings
+   39  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dea>
+   40  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   41  echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrin>
+   42  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /e>
+   43  sudo apt-get update
+   44  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx>
+   45  sudo docker run hello-world
